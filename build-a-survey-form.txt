@@ -1,0 +1,125 @@
+** start of undefined **
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Survey Form</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1 id="title">Adams Survey Form</h1>
+  <p id="description">Thank you for helping us acquire the information</p>
+  <form id="survey-form">
+    <fieldset>
+      <label id="name-label">Name<input id="name" type="text" required placeholder="Enter your name" name="Name"></input></label>
+      <label id="email-label">Email <input id="email" type="email" required placeholder="Enter your email" name="Email"></input></label>
+      <label id="number-label">Age (Optional) <input id="age" type="number" min="13" max="120" placeholder="Enter your age" name="Age"></input></label>
+       <input id="number" type="number" min="1" max="5" placeholder="Enter your rating (1-5)" name="Rating" required></input>
+      </fieldset>
+      <label for="recommend">How are you likely to recommend our website to your friends?
+      <select id="dropdown">
+        <option value="">(Select one)</option>
+          <option value="1">Very likely</option>
+          <option value="2">Likely</option>
+          <option value="3">Not sure</option>
+          <option value="4">Unlikely</option>
+          <option value="5">Very unlikely</option>
+        </select>
+        </label>
+        <fieldset>
+          <legend>What is your gender?</legend>
+          <label for="male"><input id="male" type="radio" name="Gender" checked class="inline" value="male"> </input>Male</label>
+          <label for="female"><input id="female" type="radio" name="Gender" class="inline" value="female"> </input>Female</label>
+          <label for="undisclosed"><input id="undisclosed" type="radio" name="Gender" class="inline" value="undisclosed"></input> Prefer not to say</label>
+          </fieldset>
+          <fieldset>
+            <legend>What is your employment status?</legend>
+            <label for="employed"><input id="employed" checked name="employed" value="employed" type="checkbox" class="inline"> </input>Employed</label>
+            <label for="unemployed"><input id="unemployed" name="unemployed" value="unemployed" type="checkbox" class="inline"> </input>Unemployed</label>
+            <label for="self-employed"><input id="self-employed" name="self-employed" value="self-employed" type="checkbox" class="inline"> </input>Self-employed</label>
+            <label for="student"><input id="student" name="student" value="student" type="checkbox"class="inline"> </input>Student</label>
+            </fieldset>
+            <label for=bio>Would you like to give more information?<textarea rows="3" cols="35"></textarea></label>
+         <input id="submit" type="submit" value="Submit"></input>   
+    </form>
+  </body>
+</html>
+
+** end of undefined **
+
+** start of undefined **
+
+body {
+  background-color: grey;
+  font-family: roboto;
+  color: white;
+  font-size: 18px;
+  width: 100%;
+  height:100vh;
+  margin: 0;
+}
+h1, p {
+  text-align: center
+}
+
+form {
+  width: 60%;
+  max-width: 500px;
+  min-width: 300px;
+  margin: 0 auto;
+  padding-bottom: 2rem;
+}
+
+fieldset {
+  margin: 10px auto;
+  border: none;
+  border-bottom: solid 3px black
+}
+
+label {
+  display: block;
+  margin: 0.5rem auto; 
+}
+
+textarea {
+  width: 100%;
+  margin: 10px auto;
+  min-height: 2em;
+}
+
+select {
+  width: 100%;
+  margin: 10px auto;
+  min-height: 2em;
+}
+
+input {
+  width: 100%;
+  margin: 10px auto;
+  min-height: 2em;
+  border: white solid;
+}
+
+.inline {
+  width: unset;
+  display: inline;
+  vertical-align: middle;
+}
+
+input[id="submit"] {
+  display: block;
+  font-size: 18px;
+  width: 60%;
+  max-width: 300px;
+  background-color: black;
+  color: white;
+  border: white solid 1px;
+}
+input[id="submit"]:hover {
+  background-color: grey;
+  color: black;
+}
+
+** end of undefined **
+
