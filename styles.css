@@ -1,0 +1,154 @@
+** start of undefined **
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daniel Moi Tribute</title>
+    <link href="styles.css" rel="stylesheet">
+    </head>
+    <body>
+        <main id="main">
+          <header>
+            <h1 id="title">Daniel Toroitich arap Moi</h1>
+            <p>24 years of leadership</p>
+          </header>
+       <div id="img-div">
+         <img id="image" src="https://i.guim.co.uk/img/media/572a06687a974b0ca0cb7f9b27db182e0fa5f38b/221_100_1510_906/master/1510.jpg?width=1900&dpr=2&s=none">
+         <figcaption id="img-caption">President Moi holding his famous 'rungu' during a national celebration.</figcaption>
+       </div> 
+       <div id="tribute-info">
+         <h2>Daniel arap Moi (1924-2020): A Kenyan President's Summary</h2>
+           <fieldset>
+             <ul>
+               <li><b>Born:</b> September 2, 1924</li>
+               <li><b>Died:</b> February 4, 2024</li>
+             </ul>
+             </fieldset>
+             <fieldset>
+               <legend>Political Career</legend>
+               <ul>
+                 <li>1955-1963: Member of the Legislative Council in colonial Kenya.</li>
+                 <li>1964-1967: Minister of Home Affairs.</li>
+                 <li>1967-1978: Vice President of Kenya.</li>
+                 <li>1978-2002: President of Kenya, the longest-serving to date.</li>
+               </ul>
+               </fieldset>
+               <fieldset>
+                 <legend>Notable Achievements</legend>
+                 <ul>
+                   <li>1978-2002: Overseen continued economic growth in Kenya, particularly in tourism and agriculture.</li>
+                   <li>Early 1980s: Introduced free primary education, improving literacy rates.</li>
+                   <li>Throughout his term: Invested in infrastructure projects like roads and dams.</li>
+                   <li>Played a role in: Mediating conflicts in Kenya and neighboring countries.</li>
+                 </ul>
+               </fieldset>
+               <fieldset>
+                 <legend>Controversies</legend>
+                 <ul>
+                   <li>1982: Established a one-party state, limiting political freedoms.</li>
+                   <li>Throughout his term: Accused of human rights abuses including torture, detention, and assassinations.</li>
+                   <li>Throughout his term: Accused of human rights abuses including torture, detention, and assassinations.</li>
+                   <li>Throughout his term: Promoted members of his Kalenjin tribe to key positions, marginalizing others.</li>
+                 </ul>
+               </fieldset>
+               <fieldset>
+                 <legend>Legacy</legend>
+                 <p>Daniel arap Moi remains a complex figure in Kenyan history. While credited with economic growth and some positive developments, his authoritarian rule, human rights abuses, and corruption cast a long shadow.</p>
+               </fieldset>
+         </div> 
+         
+         <p class="last-p"><b>Read more about Moi on his <a id="tribute-link" target="_blank" href="https://en.wikipedia.org/wiki/Daniel_arap_Moi">Wikipedia page</a></b></p>  
+      </main>  
+    </body> 
+  </html>
+
+** end of undefined **
+
+** start of undefined **
+
+#title {
+  text-align: center;
+  padding-top: 20;
+  margin-bottom: -10px
+}
+
+header {
+  margin: 10 auto
+}
+
+ p {
+  text-align: center;
+}
+
+body {
+  max-width: 900px;
+  margin: auto;
+  font-family: roboto;
+  font-size: 18px
+}
+
+#main {
+  width: 90%;
+  background-color: lightgrey
+  
+}
+
+#image {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+  display: block;
+  justify-content: center;
+  margin: 10px auto;
+  border-radius: 3%;
+  border-top: 5px solid black
+}
+
+#img-caption {
+  text-align: center
+}
+
+fieldset {
+  border: none
+}
+
+#tribute-info {
+  padding: 15px 10;
+
+}
+
+#tribute-info h2 {
+text-align: center
+}
+
+#tribute-link {
+color: blue;
+text-decoration: none;
+}
+
+#tribute-link:hover {
+  color: grey
+}
+
+legend {
+  font-weight: 800;
+  text-align: center;
+}
+
+li {
+  margin: 5px;
+  
+}
+
+ul {
+  padding: 0
+}
+
+.last-p {
+  padding-bottom: 20px;
+}
+
+** end of undefined **
+
