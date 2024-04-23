@@ -1,0 +1,205 @@
+** start of undefined **
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles.css" rel="stylesheet">
+    <title>Technical Documentaion</title>
+  </head>
+  <body>
+    <nav id="navbar">
+      <header>RESTful APIs</header>
+      <ul>
+      <li><a class="nav-link" id="Introduction_to_RESTful_APIs" href="#Introduction_to_RESTful_APIs">Introduction to RESTful APIs</a>
+      </li>
+      <li><a class="nav-link"  href="#Principles_of_RESTful_APIs">Principles of RESTful APIs</a>
+      </li>
+      <li>
+        <a class="nav-link"  id="Advantages_of_RESTful_APIs" href="#Advantages_of_RESTful_APIs">Advantages of RESTful APIs</a>
+      </li>
+      <li>
+        <a class="nav-link"  id="Implementing_RESTful_APIs" href="#Implementing_RESTful_APIs">Implementing RESTful APIs</a>
+      </li>
+      <li>
+        <a class="nav-link"  id="Examples_and_Best_Practices" href="#Examples_and_Best_Practices">Examples and Best Practices</a>
+      </li>
+      </ul>
+    </nav>
+    <main id="main-doc">
+      <section class="main-section" id="Introduction_to_RESTful_APIs">
+        <header><h1>Introduction to RESTful APIs</h1></header>
+        <h3>What is REST</h3>
+        <p>Representational State Transfer (REST) is an architectural style for designing networked applications.</p>
+        <p>It emphasizes a stateless client-server relationship where clients make requests to servers, and servers respond with data, typically in the form of JSON or XML representations.</p>
+        <h3>Understanding RESTful APIs</h3>
+        <p>RESTful APIs are APIs that adhere to the principles of REST.</p>
+        <p>They provide a standardized way for clients to interact with server resources over the web.</p>
+        <p>This approach simplifies communication and promotes scalability and flexibility in application development.</p>
+        <ul>Key Points
+          <li>Stateless client-server interaction</li>
+          <li>Emphasis on standard methods and data formats</li>
+        </ul>
+        <code>GET /users</code>
+      </section>
+      <section class="main-section" id="Principles_of_RESTful_APIs">
+        <header><h1>Principles of RESTful APIs</h1></header>
+        <h3>Clients-Server Architecture</h3>
+        <p>RESTful APIs are built around a client-server architecture, where clients initiate requests to servers for resources or actions.</p>
+        <p>This separation of concerns enables independent evolution of client and server components.</p>
+        <h3>Stateless Communication</h3>
+        <p>Each request from a client to the server contains all the information necessary for the server to fulfill the request.</p>
+        <p>This statelessness enhances scalability by allowing servers to handle requests independently.</p>
+        <h3>Uniform Interface</h3>
+        <p>RESTful APIs feature a uniform interface that simplifies interactions between clients and servers. This interface includes standard methods (GET, POST, PUT, DELETE) for resource manipulation, resource identification through URIs, and self-descriptive messages exchanged between clients and servers.</p>
+        <ul>Key Components:
+          <li>HTTP methods: GET, POST, PUT, DELETE</li>
+           <li>Resource identification using URIs</li>
+        </ul>
+        <code> GET /users/{id}</code>
+      </section>
+      <section class="main-section" id="Advantages_of_RESTful_APIs">
+        <header><h1>Advantages of RESTful APIs</h1></header>
+        <h3>Scalability</h3>
+          <p>RESTful APIs inherently support scalability due to their stateless nature and uniform interface. Servers can handle a large number of concurrent requests efficiently, making them suitable for applications with varying workloads.</p>
+          <h3>Flexibility</h3>
+<p>RESTful APIs offer flexibility in terms of platform and language independence. Clients can interact with RESTful APIs using a variety of programming languages and frameworks, making them versatile and accessible.</p>
+
+          <h3>Simplicity</h3>
+            <p>RESTful APIs are designed to be simple and easy to understand. They use standard HTTP methods and data formats (such as JSON or XML), reducing the learning curve for developers and promoting widespread adoption.</p>
+            <ul>
+  Benefits:
+              <li>Easy adoption and integration.</li>
+              <li>Reduced complexity in client-server interactions.</li>
+</ul>
+            <code>
+    {
+    "name": "John Doe",
+    "age": 30,
+    "email": "john@example.com"
+  }
+            </code>
+      </section>
+      <section class="main-section" id="Implementing_RESTful_APIs">
+        <header><h1>Implementing RESTful APIs</h1></header>
+        <h3>Designing RESTful Endpoints</h3>
+        <p>When designing RESTful APIs, it's important to define clear and consistent endpoint structures. This involves choosing appropriate URIs and HTTP methods for representing resources and their actions.</p>
+
+        <h3>Handling Responses</h3>
+        <p>RESTful APIs use self-descriptive messages to communicate between clients and servers. Hypermedia As The Engine Of Application State (HATEOAS) allows clients to navigate through the API dynamically by following hypermedia links provided in server responses.</p>
+        <ul>Best Practices:
+          <li>Use appropriate HTTP status codes</li>
+          <li>Include hypermedia links for navigation</li>
+          <code>
+            200 OK
+          </code>
+      </section>
+      <section class="main-section" id="Examples_and_Best_Practices">
+        <header><h1>Examples and Best Practices</h1></header>
+        <h3>Common RESTful API Endpoints</h3>
+<p>Common RESTful API endpoints include routes for retrieving, creating, updating, and deleting resources. For example, /users for managing user data and /posts for managing blog posts.</p>
+
+<h3>Best Practices for RESTful API Design</h3>
+<p>Best practices for designing RESTful APIs include versioning endpoints, handling errors gracefully with appropriate status codes, and implementing security measures such as authentication and authorization.</p>
+
+<ul>Tips:
+<li>Version endpoints for backward compatibility</li>
+<li>Implement OAuth for secure authentication</li>
+</ul>
+<code>
+  DELETE /users/{id}
+</code>
+      </section>
+      </main>
+  </body>
+  </html>
+
+
+
+** end of undefined **
+
+** start of undefined **
+
+body {
+  font-family: sans-serif;
+  font-size: 16px;
+  background-color: black;
+  color: white;
+  margin: 20px auto
+}
+
+h1 {
+  text-align: center;
+  font-weight: bold;
+}
+
+h3 {
+  text-align: left;
+  font-style: italic
+}
+
+#main-doc {
+  max-width: 1000px;
+  width: 100%;
+  margin: 10px auto
+}
+
+#main-section {
+  margin: 10px auto;
+  margin-bottom: 20px;
+  border: 1px solid orange;
+}
+
+p, ul {
+  padding: 10px;
+  line-height: 2;
+  
+}
+
+.nav-link {
+  position: absolute;
+  left: 20px;
+  color: white;
+  text-decoration: none;
+  border-bottom: 1px solid white;
+  
+}
+
+ul {
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+
+#navbar>header {
+  padding-bottom: 0;
+  margin-top: 20;
+  margin-bottom: 0
+}
+
+code {
+  border: 1px solid grey;
+  padding: 10px;
+  margin: 10px ;
+  width: 100%
+}
+
+@media (max-width:500px){
+  #navbar {
+    float: left;
+
+  }
+}
+
+nav ul li {
+  
+  list-style-type: square;
+  color: black
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+** end of undefined **
+
